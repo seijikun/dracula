@@ -1,0 +1,19 @@
+{
+  "name": "dracula",
+  "version": "0.0.0",
+  "homepage": "https://github.com/strathausen/dracula",
+  "authors": [
+    "Johann Philipp Strathausen <strathausen@gmail.com>"
+  ],
+  "description": "dracula website",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/files/vendor",
+    "test",
+    "tests"
+  ]
+}

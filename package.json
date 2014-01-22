@@ -1,59 +1,24 @@
 {
-	"name": "kitchensink.docpad",
-	"version": "0.4.2",
-	"description": "Kitchensink Skeleton for DocPad, based off Twitter's Bootstrap",
-	"homepage": "https://github.com/balupton/kitchensink.docpad",
-	"keywords": [
-		"twitter",
-		"bootstrap",
-		"website",
-		"docpad",
-		"theme"
-	],
-	"author": {
-		"name": "Benjamin Lupton",
-		"email": "b@lupton.cc",
-		"url": "http://balupton.com"
-	},
-	"maintainers": [
-		{
-			"name": "Benjamin Lupton",
-			"email": "b@lupton.cc",
-			"url": "http://balupton.com"
-		}
-	],
-	"contributors": [
-		{
-			"name": "Benjamin Lupton",
-			"email": "b@lupton.cc",
-			"url": "http://balupton.com"
-		}
-	],
-	"bugs": {
-		"url": "https://github.com/balupton/kitchensink.docpad/issues"
-	},
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://creativecommons.org/licenses/MIT/"
-		}
-	],
-	"repository" : {
-		"type" : "git",
-		"url" : "http://github.com/balupton/kitchensink.docpad.git"
-	},
-	"dependencies": {
-		"coffee-script": "1.1.x",
-		"express": "2.5.x",
-		"docpad": "2.4.0"
-	},
-	"engines" : {
-		"node": ">=0.4.0"
-	},
-	"docpad": {
-		"enabledPlugins": {
-			"admin": true,
-			"rest": true
-		}
-	}
+  "name": "dracula-website",
+  "version": "0.0.0",
+  "description": "website for the dracula graph library",
+  "main": "none",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strathausen/dracula.git"
+  },
+  "author": "Johann Philipp Strathausen <strathausen@gmail.com> (http://www.stratha.us/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strathausen/dracula/issues"
+  },
+  "homepage": "https://github.com/strathausen/dracula",
+  "dependencies": {
+    "stylus": "~0.42.1",
+    "yamlmd": "~0.2.0",
+    "jade": "~1.1.5"
+  }
 }
