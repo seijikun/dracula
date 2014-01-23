@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "graphdracula": "strathausen/dracula"
+    "graphdracula": "strathausen/dracula",
+    "knacss": "~2.9.2"
   }
 }

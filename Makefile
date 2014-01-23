@@ -8,5 +8,19 @@ html:
 
 style:
 	./node_modules/.bin/stylus \
-	  < src/style.styl \
-	  > public/style.css
+	  src/style.styl \
+	  -o public/
+
+style-watch:
+	./node_modules/.bin/stylus --watch \
+	  src/style.styl \
+	  -o public/
+
+scripts:
+	cat \
+	  src/jquery.js \
+	  src/raphael-min.js \
+	  src/graph.js \
+	  src/graffle.js \
+	  src/script.js \
+	  > ./public/script.js
