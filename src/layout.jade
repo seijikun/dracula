@@ -7,4 +7,17 @@ html
   title=title
   body
     #content
-      !=html
+      each item in items
+        h2(id=item.id)
+          a(href="##{item.id}",title='link here') #
+          =item.title
+        !=item.html
+
+    #news
+      h2(id='news')
+        a(href="#news",title='link here') #
+      ul
+      each post in news
+        li
+        date=post.date
+        !=post.html
