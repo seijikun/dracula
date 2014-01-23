@@ -23,6 +23,7 @@ window.onload = function() {
   var redraw = function() {
     layouter.layout();
     renderer.draw();
+    return false;
   };
-  $('#redraw').on('click', redraw);
+  jQuery('#redraw').on('click', redraw);
 };
