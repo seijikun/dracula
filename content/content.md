@@ -29,9 +29,4 @@ renderer.draw();
 </div>
 
 <div id='canvas'></div>
-
-## Examples
-
-Here's just some example to show how super easy it is
-
-## Documentation
+<a class='button' id='redraw'>redraw</a>
