@@ -1,9 +1,13 @@
-compile: html style
+# The UNIX Blog Engine
+
+compile: html style scripts
 
 html:
 	./node_modules/.bin/jade \
 	  < src/layout.jade \
-	  --obj "`./node_modules/.bin/yamlmd2json < src/content.md`" \
+	  --obj "`ls content/*.md | \
+		xargs -I {} ./node_modules/.bin/yamlmd2json -f {} \; | \
+		jq --slurp '{ items: . }'`" \
 	  > public/index.html
 
 style:
