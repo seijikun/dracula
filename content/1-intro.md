@@ -1,8 +1,6 @@
 title: 'Dracula Graph Library'
 
 
-# Graph Dracula
-
 ``` js
 var g = new Graph();
  

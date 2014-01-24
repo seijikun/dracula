@@ -5,9 +5,10 @@ compile: html style scripts
 html:
 	./node_modules/.bin/jade \
 	  < src/layout.jade \
-	  --obj "`ls content/*.md | \
+	  --obj "`ls content/*.md | sort | \
 		xargs -I {} ./node_modules/.bin/yamlmd2json -f {} \; | \
-		jq --slurp '{ items: . }'`" \
+		./jq --slurp \
+		'{items:map(select(has("date")|not)),news:map(select(has("date")))}'`" \
 	  > public/index.html
 
 style:
