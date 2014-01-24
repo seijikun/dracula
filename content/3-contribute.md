@@ -1,3 +1,3 @@
-title: 'Contribute'
+subtitle: 'Contribute'
 
-How to contribute, git clone etc
+How to give me some of your blood.
